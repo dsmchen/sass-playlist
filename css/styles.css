@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: arial;
   background: #f8f9fb;
@@ -37,7 +41,7 @@ li {
 }
 
 #main-nav li {
-  width: 14%;
+  width: 16.66667%;
 }
 
 #main-nav a {
@@ -119,5 +123,43 @@ section h1 {
   font-size: 20px;
   max-width: 500px;
   margin: 60px 0;
+}
+
+#services {
+  margin-bottom: 60px;
+}
+
+#services ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#services li {
+  text-align: center;
+}
+
+#services img {
+  width: 60%;
+  margin: 20px 20%;
+}
+
+#services a {
+  text-decoration: none;
+  color: #032f3e;
+  font-weight: bold;
+}
+
+#services a:hover {
+  color: red;
+}
+
+#projects ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 80px;
+}
+
+#projects img {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
