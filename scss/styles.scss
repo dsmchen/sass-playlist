@@ -7,10 +7,16 @@
 
     ul {
         display: flex;
+        @include mQ(600px) {
+            flex-direction: column;
+        }
     }
 
     li {
         width: (100% / 6);
+        @include mQ(600px) {
+            width: 100%;
+        }
     }
 
     a {
@@ -21,7 +27,7 @@
         text-align: center;
 
         &:hover {
-            background: #333;
+            background: lighten($deepBlue, 6);
         }
     }
 } // end #main-nav
@@ -69,7 +75,7 @@ section h1 {
         font-weight: bold;
 
         &:hover {
-            color: red;
+            color: complement($deepBlue);
         }
     }
 }
